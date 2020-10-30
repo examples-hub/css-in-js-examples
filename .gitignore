@@ -1,4 +1,26 @@
-.sass-cache/
-*.css.map
-*.sass.map
-*.scss.map
+# auto-generated files
+.idea/
+*.iml
+.settings/
+.classpath
+.project
+.factorypath
+.DS_Store
+
+# intermediate files
+node_modules/
+
+target/
+build/
+tomcat.**
+
+*.log
+
+dist/
+lib/
+
+
+# hidden files
+bak/
+-bak/
+
