@@ -40,6 +40,7 @@ yarn start
 
 ## notes
 
+- 基于treat和react-treat，所有主题的样式均可静态提取
 - 通过styles属性直接书写theme对象中的属性值，通过类似`Button.treat.js`的treat file添加一次性的样式
 
 - 尝试修改Box样式的color属性
