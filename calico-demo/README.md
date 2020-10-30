@@ -16,7 +16,8 @@ export const CalicoBox = () => (
 )
 ```
 
-<!-- calico:白洋布，一种平坦的白色棉布，带白色斑纹动物如猫 -->
+<!-- calico: 白洋布，一种平坦的白色棉布，带白色斑纹动物如猫 -->
+
 - calico特性
 - Very light runtime made possible by the treat library. 样式完全静态提取
   - Static style extraction with full type safety.
@@ -31,21 +32,25 @@ export const CalicoBox = () => (
 
 ## demo
 
-```shell
+``` shell
 yarn start
 ```
 
-- open http://localhost:8080/
+- open http://localhost:9000/
 
-## todo
+## notes
+
+- 通过styles属性直接书写theme对象中的属性值，通过类似`Button.treat.js`的treat file添加一次性的样式
 
 - 尝试修改Box样式的color属性
   - 若为theme中定义的属性值如red5或blue5，文字样式会正常变化
   - 若为其他颜色值或颜色名，文字样式会使用默认黑色，注意本示例只支持16进制形式的颜色
+
 - 尝试修改themeTokens.js中主题属性后，控制台会提示异常
   - 临时变通的方法，修改后重新执行yarn start就可显示
 
-```
+``` 
+
 ./src/theme1.treat.js
 Module build failed (from ./node_modules/treat/webpack-plugin/loader.js):
 TreatError: treat-webpack-plugin: An error occurred during compilation: 
@@ -54,5 +59,4 @@ Error: Mismatching style trees.
       All 'styleTree' functions must return the same structure for every theme.
       
       To avoid this error, ensure that object keys and array lengths do not depend on unique properties of each theme.
-```      
-
+```

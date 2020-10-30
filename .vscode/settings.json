@@ -1,6 +1,6 @@
 {
   "editor.insertSpaces": true,
-  "editor.tabSize": 4,
+  "editor.tabSize": 2,
   "[scss]": {
     "editor.tabSize": 2
   },
@@ -11,11 +11,6 @@
   },
   "cSpell.language": "en-GB,en-US",
   "files.exclude": {
-    "grid-packages/ag-grid-community": false,
-    "grid-packages/ag-grid-enterprise": false,
-    "grid-packages/ag-grid-angular": false,
-    "grid-packages/ag-grid-react": false,
-    "grid-packages/ag-grid-vue": false,
     "**/.git": true,
     "**/.DS_Store": true,
     "packages": false
